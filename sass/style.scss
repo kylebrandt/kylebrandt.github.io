@@ -102,8 +102,8 @@ table {
     margin-bottom:40px;
     width: 100%;
 
-    tbody > tr:nth-child(odd) > td,
-    tbody > tr:nth-child(odd) > th {
+    tbody > tr > td,
+    tbody > tr > th {
         background-color: #f7f7f3;
     }
 
@@ -160,13 +160,13 @@ table {
     height: auto;
         min-height: 100%;
     /* This must be the same as the height of the footer */
-    margin-bottom: -265px;
+    margin-bottom: -20px;
 
     &:after {
         content: "";
         display: block;
         /* This must be the same as the height of the footer */
-        height: 265px;
+        height: 20px;
     }
 }
 
@@ -191,7 +191,7 @@ table {
     margin: 0 0 0 15px;
     padding: 3px 8px 4px;
 
-    &:hover { background: $secondary; }
+    //&:hover { background: $secondary; }
 }
 
 .error {
@@ -505,13 +505,13 @@ table {
 /* ============================================================ */
 
 .footer {
-    background: $secondary;
+    background: $background;
     color: #D3D3D3;
-    height: 265px;
-    margin-top: 95px;
+    height: 40px;
+    margin-top: 15px;
     overflow: auto;
 
-    .site-title-wrapper { margin: 80px auto 35px; }
+    .site-title-wrapper { margin: 30px auto 35px; }
 
     .site-title a:hover,
     .button-square:hover {
@@ -527,7 +527,7 @@ table {
 
 .footer-copyright {
     color: #656565;
-    font-size: 10px;
+    font-size: 11px;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
@@ -717,3 +717,4 @@ table {
 
     .footer-copyright { padding: 0 10px; }
 }
+

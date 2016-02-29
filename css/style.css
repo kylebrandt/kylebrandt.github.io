@@ -117,8 +117,8 @@ table {
   margin-bottom: 40px;
   width: 100%; }
   /* line 105, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
-  table tbody > tr:nth-child(odd) > td,
-  table tbody > tr:nth-child(odd) > th {
+  table tbody > tr > td,
+  table tbody > tr > th {
     background-color: #f7f7f3; }
   /* line 110, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   table th {
@@ -174,13 +174,13 @@ table {
   height: auto;
   min-height: 100%;
   /* This must be the same as the height of the footer */
-  margin-bottom: -265px; }
+  margin-bottom: -20px; }
   /* line 165, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   #wrapper:after {
     content: "";
     display: block;
     /* This must be the same as the height of the footer */
-    height: 265px; }
+    height: 20px; }
 
 /* line 173, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .button {
@@ -204,9 +204,6 @@ table {
   font-size: 17px;
   margin: 0 0 0 15px;
   padding: 3px 8px 4px; }
-  /* line 194, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
-  .button-square:hover {
-    background: #000000; }
 
 /* line 197, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .error {
@@ -540,14 +537,14 @@ table {
 /* ============================================================ */
 /* line 507, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .footer {
-  background: #000000;
+  background: #FEFEFE;
   color: #D3D3D3;
-  height: 265px;
-  margin-top: 95px;
+  height: 40px;
+  margin-top: 15px;
   overflow: auto; }
   /* line 514, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer .site-title-wrapper {
-    margin: 80px auto 35px; }
+    margin: 30px auto 35px; }
   /* line 516, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer .site-title a:hover,
   .footer .button-square:hover {
@@ -561,7 +558,7 @@ table {
 /* line 528, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .footer-copyright {
   color: #656565;
-  font-size: 10px;
+  font-size: 11px;
   margin: 0;
   text-align: center;
   text-transform: uppercase; }

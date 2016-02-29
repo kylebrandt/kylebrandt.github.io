@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Kyle Brandt</title>
-    <link>http://kylebrandt.github.io/page/</link>
+    <link>http://kbrandt.com/page/</link>
     <description>Recent content in Pages on Kyle Brandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2015, Kyle Brandt; all rights reserved.</copyright>
     <lastBuildDate>Sun, 21 Feb 2016 14:53:00 -0500</lastBuildDate>
-    <atom:link href="http://kylebrandt.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbrandt.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Other writing</title>
-      <link>http://kylebrandt.github.io/page/writing/</link>
+      <link>http://kbrandt.com/page/writing/</link>
       <pubDate>Sun, 21 Feb 2016 14:53:00 -0500</pubDate>
       
-      <guid>http://kylebrandt.github.io/page/writing/</guid>
+      <guid>http://kbrandt.com/page/writing/</guid>
       <description>
 
 &lt;h1 id=&#34;server-fault-blog:a65cffa9c73225e9b2db0699034df561&#34;&gt;Server Fault Blog&lt;/h1&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>talks</title>
-      <link>http://kylebrandt.github.io/page/talks/</link>
+      <link>http://kbrandt.com/page/talks/</link>
       <pubDate>Sun, 21 Feb 2016 14:06:24 -0500</pubDate>
       
-      <guid>http://kylebrandt.github.io/page/talks/</guid>
+      <guid>http://kbrandt.com/page/talks/</guid>
       <description>
 
 &lt;h1 id=&#34;presentations:49cbbfcf1124f111a37fcbac0faeb48e&#34;&gt;Presentations&lt;/h1&gt;
@@ -69,10 +69,10 @@ This presentation has screencasts of building an alert starting about 15 minutes
     
     <item>
       <title>projects</title>
-      <link>http://kylebrandt.github.io/page/projects/</link>
+      <link>http://kbrandt.com/page/projects/</link>
       <pubDate>Sun, 21 Feb 2016 13:49:54 -0500</pubDate>
       
-      <guid>http://kylebrandt.github.io/page/projects/</guid>
+      <guid>http://kbrandt.com/page/projects/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://bosun.org&#34;&gt;Bosun&lt;/a&gt; / Time Series Alerting System and IDE developed at Stack Overflow&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://bosun.org/scollector&#34;&gt;scollector&lt;/a&gt; / Monitoring agent developed at Stack Overflow&lt;/li&gt;
@@ -83,10 +83,10 @@ This presentation has screencasts of building an alert starting about 15 minutes
     
     <item>
       <title>about</title>
-      <link>http://kylebrandt.github.io/page/about/</link>
+      <link>http://kbrandt.com/page/about/</link>
       <pubDate>Sat, 20 Feb 2016 14:44:37 -0500</pubDate>
       
-      <guid>http://kylebrandt.github.io/page/about/</guid>
+      <guid>http://kbrandt.com/page/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m an orginial co-author of the &lt;a href=&#34;http://bosun.org&#34;&gt;Bosun&lt;/a&gt; monitoring system and the &lt;a href=&#34;http://bosun.org/scollector/&#34;&gt;scollector&lt;/a&gt; monitoring agent.&lt;/p&gt;
 
 &lt;p&gt;Currently I work at Stack Overflow as the director of the SRE (Site Reliability Engineering) team.&lt;/p&gt;
