@@ -94,7 +94,7 @@
         &lt;td&gt;&lt;a href=&#34;https://hbase.apache.org/&#34;&gt;HBase&lt;/a&gt;: A clone of Google&#39;s Bigtable runs on top of Hadoop&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;td&gt;&lt;a href=&#34;http://hadoop.apache.org/&#34;&gt;Hadoop&lt;/a&gt;: What we use to manage HBase&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://cloudera.com/products/cloudera-manager.html&#34;&gt;Cloudera Manager&lt;/a&gt;: What we use to manage HBase&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;&lt;a href=&#34;http://www.haproxy.org/&#34;&gt;HAProxy&lt;/a&gt;&lt;/td&gt;
