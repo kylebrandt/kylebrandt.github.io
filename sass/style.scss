@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size: 26px; }
 h2 { font-size: 22px; }
-h3 { font-size: 20px; margin-bottom: 16px; }
+h3 { font-size: 19px; margin-bottom: 14px; }
 h4 { font-size: 18px; margin-bottom: 14px; }
 h5 { font-size: 16px; margin-bottom: 13px; }
 h6 { font-size: 14px; margin-bottom: 12px; }
@@ -101,6 +101,7 @@ hr {
 table {
     margin-bottom:40px;
     width: 100%;
+    font-size: 14px;
 
     tbody > tr > td,
     tbody > tr > th {
@@ -112,7 +113,9 @@ table {
         text-align: left;
     }
 
-    td { padding: 10px; }
+    td { 
+        padding: 4px 4px 4px 4px;
+    }
 
     tr { border-bottom: 1px dotted #AEADAD; }
 }

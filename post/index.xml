@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kyle Brandt</title>
-    <link>http://kbrandt.com/</link>
-    <description>Recent content on Kyle Brandt</description>
+    <title>Posts on Kyle Brandt</title>
+    <link>http://kbrandt.com/post/</link>
+    <description>Recent content in Posts on Kyle Brandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2015, Kyle Brandt; all rights reserved.</copyright>
     <lastBuildDate>Tue, 01 Mar 2016 14:49:12 -0500</lastBuildDate>
-    <atom:link href="http://kbrandt.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbrandt.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Stack Overflow&#39;s Bosun Architecture</title>
@@ -356,90 +356,6 @@ metric  time   tagk  tagv
 &lt;p&gt;Our largest pain point is using OpenTSDB and HBase. Since we don&amp;rsquo;t use HBase anywhere else, the administrative overhead eats up a lot of time. Also, OpenTSDB has had some long standing issues that have been difficult, for example &lt;a href=&#34;https://groups.google.com/forum/#!topic/opentsdb/KdgGNK0Y9HQ&#34;&gt;counters don&amp;rsquo;t downsample correctly&lt;/a&gt; and our data is in counter format when possible so we don&amp;rsquo;t lose resolution. That being said we still feel for us it is currently our best option. We will be expanding our two main clusters with two more nodes each (running tsdbrelay, opentsdb, and region servers) to increase space.&lt;/p&gt;
 
 &lt;p&gt;We are very interested in &lt;a href=&#34;https://influxdata.com/&#34;&gt;InfluxDB&lt;/a&gt;. It is written in Go which we are familiar with and has a rapid devlopment cycle. Bosun has it as a backend, and scollector can send to it since it has a OpenTSDB api style endpoint. However, we are waiting for InfluxBD to have a more stable clustering story before we could consider switching to it in production.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Other writing</title>
-      <link>http://kbrandt.com/page/writing/</link>
-      <pubDate>Sun, 21 Feb 2016 14:53:00 -0500</pubDate>
-      
-      <guid>http://kbrandt.com/page/writing/</guid>
-      <description>
-
-&lt;h1 id=&#34;server-fault-blog:a65cffa9c73225e9b2db0699034df561&#34;&gt;Server Fault Blog&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2013/11/26/the-importance-of-observability/&#34;&gt;The Importance of Observability&lt;/a&gt; Nov 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2012/07/18/ooda-for-sysadmins/&#34;&gt;OODA For Sysadmins&lt;/a&gt; Jul 2012&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2012/02/07/escaping-the-cycle-of-technical-debt/&#34;&gt;Escaping the Cycle of Technical Debt&lt;/a&gt; Feb 2012&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2011/06/27/per-second-measurements-dont-cut-it/&#34;&gt;Per Second Measurements Don&amp;rsquo;t Cut it&lt;/a&gt; Jun 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2011/05/06/the-limits-of-cost-benefit-analysis-in-it/&#34;&gt;The Limits of Cost-Benefit Analysis in IT&lt;/a&gt; May 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2011/03/16/views-of-the-same-problem-network-admin-dba-and-developer/&#34;&gt;Views of the Same Problem: Network Admin, DBA, and Developer&lt;/a&gt; March 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2011/01/17/know-your-ram/&#34;&gt;Know your RAM&lt;/a&gt; Jan 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.serverfault.com/2010/06/28/747186396/&#34;&gt;Serverfault Trees&lt;/a&gt; Jun 2010&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>talks</title>
-      <link>http://kbrandt.com/page/talks/</link>
-      <pubDate>Sun, 21 Feb 2016 14:06:24 -0500</pubDate>
-      
-      <guid>http://kbrandt.com/page/talks/</guid>
-      <description>
-
-&lt;h1 id=&#34;presentations:49cbbfcf1124f111a37fcbac0faeb48e&#34;&gt;Presentations&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://vimeo.com/131581326&#34;&gt;Monitorama 2015 (PDX): Bosun Workshop&lt;/a&gt;
-This presentation has screencasts of building an alert starting about 15 minutes in. The first 15 minutes explain some of the design principles behind Bosun. After the first screen cast of building an alert there are also some example alerts.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//player.vimeo.com/video/131581326&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-&lt;/br&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.usenix.org/conference/lisa15/conference-program/presentation/brandt&#34;&gt;LISA 2015: Precise Alerting with Bosun&lt;/a&gt; This presentation is similar to Monitorama PDX, but the intro and theme focuses more on the important of monitoring in general.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.usenix.org/conference/lisa14/conference-program/presentation/brandt&#34;&gt;LISA 2014: A New Age in Alerting with Bosun: The First Alerting IDE&lt;/a&gt;: This was the first presentation on Bosun which was given right after the initial release. An introduction to the underlying thoughts on problems with alerting and how Bosun solves them.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;video-tutorials:49cbbfcf1124f111a37fcbac0faeb48e&#34;&gt;Video Tutorials&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLWetmRzVkFTdnjRmE-a-JRx2m8qgB6iu9&#34;&gt;Bosun Fundementals Series&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>projects</title>
-      <link>http://kbrandt.com/page/projects/</link>
-      <pubDate>Sun, 21 Feb 2016 13:49:54 -0500</pubDate>
-      
-      <guid>http://kbrandt.com/page/projects/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://bosun.org&#34;&gt;Bosun&lt;/a&gt; / Time Series Alerting System and IDE developed at Stack Overflow&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bosun.org/scollector&#34;&gt;scollector&lt;/a&gt; / Monitoring agent developed at Stack Overflow&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/grafana-plugins/tree/master/datasources/bosun&#34;&gt;Bosun Grafana Plugin&lt;/a&gt; / Allows graphing and tables of Bosun expressions&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>http://kbrandt.com/page/about/</link>
-      <pubDate>Sat, 20 Feb 2016 14:44:37 -0500</pubDate>
-      
-      <guid>http://kbrandt.com/page/about/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m an orginial co-author of the &lt;a href=&#34;http://bosun.org&#34;&gt;Bosun&lt;/a&gt; monitoring system and the &lt;a href=&#34;http://bosun.org/scollector/&#34;&gt;scollector&lt;/a&gt; monitoring agent.&lt;/p&gt;
-
-&lt;p&gt;Currently I work at Stack Overflow as the director of the SRE (Site Reliability Engineering) team.&lt;/p&gt;
 </description>
     </item>
     
