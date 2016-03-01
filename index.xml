@@ -37,7 +37,7 @@
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;A store for metric metadata and string data about tags (for example, host IPs, Serial numbers, etc)&lt;/td&gt;
-    &lt;/tr&gt;   
+    &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td rowspan=2&gt;&lt;a href=&#34;http://bosun.org/scollector/&#34;&gt;scollector&lt;/a&gt;&lt;/td&gt;
         &lt;td rowspan=2&gt;Collection Agent&lt;/td&gt;
@@ -70,12 +70,12 @@
     &lt;tr&gt;
         &lt;td&gt;&lt;a href=&#34;http://grafana.org&#34;&gt;Grafana&lt;/a&gt;&lt;/td&gt;
         &lt;td&gt;User Dashboards&lt;/td&gt;
-        &lt;td&gt;Uses the  [Grafana Bosun plugin](https://github.com/grafana/grafana-plugins/tree/master/datasources/bosun) to create graphs and tables via Bosun expressions&lt;/td&gt;
+        &lt;td&gt;Uses the [Grafana Bosun plugin](https://github.com/grafana/grafana-plugins/tree/master/datasources/bosun) to create graphs and tables via Bosun expressions&lt;/td&gt;
     &lt;/tr&gt;
         &lt;tr&gt;
         &lt;td&gt;TPS&lt;/td&gt;
         &lt;td&gt;Parses Web Logs&lt;/td&gt;
-        &lt;td&gt;Gather logs. Sends raw laws to SQL and summaries in time series format to Bosun.&lt;/td&gt;
+        &lt;td&gt;Sends raw logs to SQL and summaries in time series format to Bosun.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td rowspan=2&gt;&lt;a href=&#34;https://github.com/bosun-monitor/bosun/tree/master/cmd/tsdbrelay&#34;&gt;tsdbrelay&lt;/a&gt;&lt;/td&gt;
@@ -119,7 +119,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Our homegrown applications calculate their own metrics and send them to Bosun. C# programs
-use &lt;a href=&#34;https://github.com/bretcope/BosunReporter.NET&#34;&gt;BosunReporter.NET&lt;/a&gt; and Go programs use &lt;a href=&#34;https://godoc.org/bosun.org/collect&#34;&gt;Go collect package&lt;/a&gt;.&lt;/li&gt;
+use &lt;a href=&#34;https://github.com/bretcope/BosunReporter.NET&#34;&gt;BosunReporter.NET&lt;/a&gt; and Go programs use the &lt;a href=&#34;https://godoc.org/bosun.org/collect&#34;&gt;Go collect package&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;scollector gathers stats from the OS, services it auto-discovers.&lt;/li&gt;
 &lt;li&gt;Network equipment and other devices must be polled from a third-party machine since they can not run scollector.  We designate 2 hosts to run scollector with polling mode enabled. They collect data via SNMP (network devices), ICMP pings, and can be expanded via plug-ins.&lt;/li&gt;
 &lt;/ul&gt;
@@ -147,7 +147,7 @@ use &lt;a href=&#34;https://github.com/bretcope/BosunReporter.NET&#34;&gt;BosunR
 
 &lt;h2 id=&#34;our-opentsdb-and-hbase-setup:7bc97b814cc5ce0a4508e0dd2bd2e58d&#34;&gt;Our OpenTSDB and HBase Setup&lt;/h2&gt;
 
-&lt;p&gt;In our main datacenter in NY to we have two HBase clusters. One is a three node cluster running on NY-TSDB0{1,2,3}. , and the other is a local replica running on NY-BOSUN01.  The local replica is for backups (See how we Backup below).&lt;/p&gt;
+&lt;p&gt;In our main datacenter in NY to we have two HBase clusters. One is a three node cluster running on NY-TSDB0{1,2,3}. The other is a local replica running on NY-BOSUN01.  The local replica is for backups (See how we Backup below).&lt;/p&gt;
 
 &lt;p&gt;In our secondary datacenter (named &amp;ldquo;CO&amp;rdquo;) we have a three node cluster that is a mirror setup of the NY-TSDB cluster. The HBase clusters don&amp;rsquo;t replicate across datacenters, rather tsdbrelay relays the datapoints to each independent data store.&lt;/p&gt;
 
@@ -195,7 +195,7 @@ maxSessionTimeout: 600000
 &lt;pre&gt;&lt;code&gt;zookeeper.session.timeout: 600000
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;With low zookeeper timeouts, if operations took a long time or spend a long time in garbage collection, then hbase servers would eject themselves taking the cluster down.&lt;/p&gt;
+&lt;p&gt;With low zookeeper timeouts, if operations took a long time or spent a long time in garbage collection, then HBase servers would eject themselves taking the cluster down.&lt;/p&gt;
 
 &lt;h3 id=&#34;denormalization-query-speed-and-last:7bc97b814cc5ce0a4508e0dd2bd2e58d&#34;&gt;Denormalization, Query Speed, and Last&lt;/h3&gt;
 
@@ -215,7 +215,7 @@ metric  time   tagk  tagv
 &lt;p&gt;We work around this query speed issue to generate views in two ways:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Redis stores the last value (the last two for counters) for all series. When generating these views, we can get current values for anything nearly instantly. This data is used in Boson&amp;rsquo;s &lt;code&gt;/api/host&lt;/code&gt; endpoints and can also be queried directly at `/api/last&lt;/li&gt;
+&lt;li&gt;Redis stores the last value (the last two for counters) for all series. When generating these views, we can get current values for anything nearly instantly. This data is used in Boson&amp;rsquo;s &lt;code&gt;/api/host&lt;/code&gt; endpoints and can also be queried directly at &lt;code&gt;/api/last&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Denormalize the metrics&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -341,7 +341,7 @@ metric  time   tagk  tagv
 &lt;ol&gt;
 &lt;li&gt;Bosun&amp;rsquo;s Configuration File&lt;/li&gt;
 &lt;li&gt;Bosun&amp;rsquo;s State and Metadata Storage&lt;/li&gt;
-&lt;li&gt;The Time series data&lt;/li&gt;
+&lt;li&gt;The Time Series Data&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;The configuration file is stored in Git which is backed up independently (we use &lt;a href=&#34;https://about.gitlab.com/&#34;&gt;Gitlab&lt;/a&gt; internally). We now use redis to store bosun&amp;rsquo;s state and metadata. Bosun will use &lt;a href=&#34;https://github.com/siddontang/ledisdb&#34;&gt;ledis&lt;/a&gt; if no redis server is provided, but we haven&amp;rsquo;t explored how this would be backed up as it is there for small test setups. In redis we use both RDB and AOF for &lt;a href=&#34;http://redis.io/topics/persistence&#34;&gt;redis persistence&lt;/a&gt;:&lt;/p&gt;
