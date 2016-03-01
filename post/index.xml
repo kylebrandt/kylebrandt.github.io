@@ -156,6 +156,14 @@ use &lt;a href=&#34;https://github.com/bretcope/BosunReporter.NET&#34;&gt;BosunR
 &lt;p&gt;&lt;img src=&#34;http://kbrandt.com/images/hbase.svg&#34; alt=&#34;HBase Diagram&#34; /&gt;
 We use Cloudera Manager to manage our OpenTSDB clusters. We have found that HBase &lt;em&gt;can be&lt;/em&gt; stable, but it is difficult for a shop that doesn&amp;rsquo;t happen to use it anywhere else.&lt;/p&gt;
 
+&lt;h3 id=&#34;the-numbers:7bc97b814cc5ce0a4508e0dd2bd2e58d&#34;&gt;The Numbers&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3.7 Billion datapoints a day (43,000 Datapoints a second) per cluster&lt;/li&gt;
+&lt;li&gt;~8 Gigabytes a day of HDFS unreplicated growth per cluster (24GB replicated)&lt;/li&gt;
+&lt;li&gt;Currently ~ 7TB of replicated storage consumed&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&#34;opentsdb-appends-vs-compaction:7bc97b814cc5ce0a4508e0dd2bd2e58d&#34;&gt;OpenTSDB Appends vs Compaction&lt;/h3&gt;
 
 &lt;p&gt;HBase was very unstable when we first started using it in 2015.  The main thing that improved our stability was to switch to OpenTSDB&amp;rsquo;s &amp;ldquo;appends model&amp;rdquo; instead of the &amp;ldquo;hourly compactions model&amp;rdquo;.  (Note: These are unrelated to &lt;em&gt;HBase compactions&lt;/em&gt;).&lt;/p&gt;
