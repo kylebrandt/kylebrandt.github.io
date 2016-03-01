@@ -316,6 +316,8 @@ metric  time   tagk  tagv
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/kylebrandt/8c09c87fd3147fb51bc3&#34;&gt;opentsdb.conf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/kylebrandt/14acacd867d67382629a&#34;&gt;tsdbrelay CLI options (In NY)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/kylebrandt/733572edb66c27894f22&#34;&gt;haproxy config (In NY)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/kylebrandt/04c0658828e616b5d8c5&#34;&gt;Cloudera HBase Non-Defaults&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/kylebrandt/89a98f30680b799a6317&#34;&gt;Cloudera HDFS Non-Defaults&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/kylebrandt/85218ae078e57a8d3088&#34;&gt;Cloudera Zookeeper Non-Defaults&lt;/a&gt;&lt;/li&gt;
