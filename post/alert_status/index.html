@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Conflating The Roles of Alerting and Dashboards &middot; Kyle Brandt</title>
+        <meta name="description" content="Technical Manager / SRE / Programmer">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.16-DEV" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://kbrandt.com/css/normalize.css">
+        <link rel="stylesheet" href="http://kbrandt.com/css/highlight.css">
+        <link rel="stylesheet" href="http://kbrandt.com/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="http://kbrandt.com/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74450438-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Kyle Brandt" href="http://kbrandt.com/">Kyle Brandt </a>
+                            </h1>
+                        
+                        <a class="button-square" href="http://kbrandt.com/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/kylembrandt">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/kylebrandt">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="http://stackexchange.com/users/37483/kyle-brandt">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="http://kbrandt.com/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="http://kbrandt.com/page/projects/">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Talks" href="http://kbrandt.com/page/talks/">Talks</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Other Writing" href="http://kbrandt.com/page/writing/">Other Writing</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="http://kbrandt.com/page/about/">About</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Conflating The Roles of Alerting and Dashboards</h1>
+    
+    <p class="post-date">
+        <span><time datetime="2016-04-03" itemprop="datePublished">April 3, 2016</time>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<p>Monitoring dashboards and alerts have distinct roles in monitoring. Problems arise when people fail to form a contradistinction between them. Both are communication tools, but communicate differently. Monitoring dashboards communicate the current status of system&rsquo;s and their attributes, whereas alerts communicate abnormal status <em>that requires human intervention</em>. Currently at Stack Overflow, we use <a href="http://grafana.org">Grafana</a> and <a href="https://github.com/opserver/Opserver">Opserver</a> as dashboards and <a href="http://bosun.org">Bosun</a> for alerting. Bosun has a dashboard that shows the current alerts, but when I refer to dashboards I mean things like Grafana and Opserver.</p>
+
+<h1 id="mistake-1-using-alerts-as-status-dashboards:e8c548cef83497a5beb46d7f55e2761d">Mistake 1: Using Alerts as Status Dashboards</h1>
+
+<p>When alerts are used as if they were status dashboards, it leads to alert desensitization or <a href="https://en.wikipedia.org/wiki/Alarm_fatigue">Alarm Fatigue</a>. If you have alerts that come in that are just informational &ndash; it is human nature to start to ignore them due to <a href="https://en.wikipedia.org/wiki/Sensory_gating">Sensory Gating</a> (and anecdotally, it is not uncommon for people to literally filter them with something like Gmail when alerts are in email). Even if discipline is good, people sometimes won&rsquo;t even see them anymore since our brains naturally filter out repeated information.</p>
+
+<p>The underlying philosophy is that too many alerts are just as bad some &ldquo;missed alerts&rdquo;. This is expressed well in <a href="http://www.kitchensoap.com/2013/07/22/owning-attention-considerations-for-alert-design/">Owning Attention: Considerations for Alert Design</a>:</p>
+
+<p><img src="http://kbrandt.com/images/alarm_noise.jpg" style="width: 50%;" alt="Alert Noise Diagram"></p>
+
+<h2 id="example-within-this-philosophy:e8c548cef83497a5beb46d7f55e2761d">Example within this Philosophy</h2>
+
+<p>As an example, take a 30 node cluster where it is common for a couple of nodes to be down at a time. The number of nodes that are out, and which nodes they are out should be in a dashboard. However, that shouldn&rsquo;t generate alerts because it is normal behavior. Rather, you should have a dashboard that shows all this information, and only alert where the behavior deviates from its normal pattern and requires human intervention. Ideally the alert notification has most of the contextual information you would see in the status dashboard, but in practice web dashboards provide more capability than most notification mediums like email can. Alerting strategies in this case include the following:</p>
+
+<ul>
+<li>Cluster vs host based alerts: Notifications can be sent per cluster or per node in the cluster (I call this &ldquo;scope&rdquo;). Both scopes are valid, if your nodes tend to fail in groups, it is generally better for a broader scope (cluster based) so there are less notifications that can lead to alarm fatigue.</li>
+<li>Maintenance aware alerts: If nodes normally only go out during maintenance, alerts should only trigger when nodes are not in maintenance (and maybe if too many nodes are in maintenance). Maintenance can be identified by tracking maintenance as a metric, or by notifying the monitoring system of maintenance.</li>
+<li>Number or percentage of down nodes: You can alert only if N or more nodes down, a certain percentage of nodes in the cluster are down, and/or the number of down nodes is abnormal compared to history.</li>
+<li>Abnormal host downtime: If nodes normally are only down for certain periods of time, you could alert on the node or cluster if a node has been down for longer than the expected duration.</li>
+</ul>
+
+<p>What combination of the above to use would depend on your specific environment. It is also possible that you <em>do</em> want to alert when a node is down in the cluster at all. The right balance is when you actually react to almost all the alerts. If you are getting alerts that you don&rsquo;t do anything about, they are informational and are more appropriate for dashboards.</p>
+
+<h1 id="mistake-2-relying-on-alerting-or-dashboards-at-the-exclusion-of-the-other:e8c548cef83497a5beb46d7f55e2761d">Mistake 2: Relying on Alerting or Dashboards at the Exclusion of the Other</h1>
+
+<p>The downfall when depending on dashboards to show you abnormal status is that it requires that someone is looking at, and interpreting the dashboard correctly. If you have the human resources for this it can make sense in certain situations, but as a rule of thumb if you notice something that needed human action on a dashboard and didn&rsquo;t get an alert for it than an alert needs to be created.</p>
+
+<p>Dashboards are vital to monitoring and one shouldn&rsquo;t depend on solely on alerts:</p>
+
+<ul>
+<li>Visualizations provide a lot of condensed information about systems rapidly</li>
+<li>Dashboards help build operator&rsquo;s mental models of systems. By watching normal behavior and internalizing, operators understand the system better and are more prepared for unexpected emergency situations.</li>
+<li>It is faster to create dashboards that show a lot of information then it is create and tune alerts that are low in noise.</li>
+<li>Humans are very good at picking up anomalies visually, doing this with alerting code is more difficult. Dashboards can help you discover alerts that are missing.</li>
+</ul>
+
+<p>Status dashboards and alerting are essential companions to each other in monitoring, but they need to be used correctly, and when they are treated as one-to-one mappings of each other in purpose you end up limiting both your dashboarding and alerting capabilities.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="http://twitter.com/share?text=Conflating%20The%20Roles%20of%20Alerting%20and%20Dashboards&url=http%3a%2f%2fkbrandt.com%2fpost%2falert_status%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkbrandt.com%2fpost%2falert_status%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fkbrandt.com%2fpost%2falert_status%2f"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+	 </span>
+		  <span style="visibility: hidden">(est. reading time: 4 minutes) 787 words</span>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kbrandt';
+    var disqus_identifier = 'http:\/\/kbrandt.com\/post\/alert_status\/';
+    var disqus_title = 'Conflating The Roles of Alerting and Dashboards';
+    var disqus_url = 'http:\/\/kbrandt.com\/post\/alert_status\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-copyright">
+                    <span>&copy; 2016 / Powered by <a href="http://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a> (and Modfied By Me)</span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="http://kbrandt.com/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="http://kbrandt.com/js/jquery.fitvids.js"></script>
+        <script src="http://kbrandt.com/js/scripts.js"></script>
+    </body>
+</html>
+

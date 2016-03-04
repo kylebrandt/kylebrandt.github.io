@@ -6,8 +6,56 @@
     <description>Recent content on Kyle Brandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2015, Kyle Brandt; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Mar 2016 14:49:12 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 03 Apr 2016 08:36:42 -0500</lastBuildDate>
     <atom:link href="http://kbrandt.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Conflating The Roles of Alerting and Dashboards</title>
+      <link>http://kbrandt.com/post/alert_status/</link>
+      <pubDate>Sun, 03 Apr 2016 08:36:42 -0500</pubDate>
+      
+      <guid>http://kbrandt.com/post/alert_status/</guid>
+      <description>
+
+&lt;p&gt;Monitoring dashboards and alerts have distinct roles in monitoring. Problems arise when people fail to form a contradistinction between them. Both are communication tools, but communicate differently. Monitoring dashboards communicate the current status of system&amp;rsquo;s and their attributes, whereas alerts communicate abnormal status &lt;em&gt;that requires human intervention&lt;/em&gt;. Currently at Stack Overflow, we use &lt;a href=&#34;http://grafana.org&#34;&gt;Grafana&lt;/a&gt; and &lt;a href=&#34;https://github.com/opserver/Opserver&#34;&gt;Opserver&lt;/a&gt; as dashboards and &lt;a href=&#34;http://bosun.org&#34;&gt;Bosun&lt;/a&gt; for alerting. Bosun has a dashboard that shows the current alerts, but when I refer to dashboards I mean things like Grafana and Opserver.&lt;/p&gt;
+
+&lt;h1 id=&#34;mistake-1-using-alerts-as-status-dashboards:e8c548cef83497a5beb46d7f55e2761d&#34;&gt;Mistake 1: Using Alerts as Status Dashboards&lt;/h1&gt;
+
+&lt;p&gt;When alerts are used as if they were status dashboards, it leads to alert desensitization or &lt;a href=&#34;https://en.wikipedia.org/wiki/Alarm_fatigue&#34;&gt;Alarm Fatigue&lt;/a&gt;. If you have alerts that come in that are just informational &amp;ndash; it is human nature to start to ignore them due to &lt;a href=&#34;https://en.wikipedia.org/wiki/Sensory_gating&#34;&gt;Sensory Gating&lt;/a&gt; (and anecdotally, it is not uncommon for people to literally filter them with something like Gmail when alerts are in email). Even if discipline is good, people sometimes won&amp;rsquo;t even see them anymore since our brains naturally filter out repeated information.&lt;/p&gt;
+
+&lt;p&gt;The underlying philosophy is that too many alerts are just as bad some &amp;ldquo;missed alerts&amp;rdquo;. This is expressed well in &lt;a href=&#34;http://www.kitchensoap.com/2013/07/22/owning-attention-considerations-for-alert-design/&#34;&gt;Owning Attention: Considerations for Alert Design&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbrandt.com/images/alarm_noise.jpg&#34; style=&#34;width: 50%;&#34; alt=&#34;Alert Noise Diagram&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;example-within-this-philosophy:e8c548cef83497a5beb46d7f55e2761d&#34;&gt;Example within this Philosophy&lt;/h2&gt;
+
+&lt;p&gt;As an example, take a 30 node cluster where it is common for a couple of nodes to be down at a time. The number of nodes that are out, and which nodes they are out should be in a dashboard. However, that shouldn&amp;rsquo;t generate alerts because it is normal behavior. Rather, you should have a dashboard that shows all this information, and only alert where the behavior deviates from its normal pattern and requires human intervention. Ideally the alert notification has most of the contextual information you would see in the status dashboard, but in practice web dashboards provide more capability than most notification mediums like email can. Alerting strategies in this case include the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cluster vs host based alerts: Notifications can be sent per cluster or per node in the cluster (I call this &amp;ldquo;scope&amp;rdquo;). Both scopes are valid, if your nodes tend to fail in groups, it is generally better for a broader scope (cluster based) so there are less notifications that can lead to alarm fatigue.&lt;/li&gt;
+&lt;li&gt;Maintenance aware alerts: If nodes normally only go out during maintenance, alerts should only trigger when nodes are not in maintenance (and maybe if too many nodes are in maintenance). Maintenance can be identified by tracking maintenance as a metric, or by notifying the monitoring system of maintenance.&lt;/li&gt;
+&lt;li&gt;Number or percentage of down nodes: You can alert only if N or more nodes down, a certain percentage of nodes in the cluster are down, and/or the number of down nodes is abnormal compared to history.&lt;/li&gt;
+&lt;li&gt;Abnormal host downtime: If nodes normally are only down for certain periods of time, you could alert on the node or cluster if a node has been down for longer than the expected duration.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What combination of the above to use would depend on your specific environment. It is also possible that you &lt;em&gt;do&lt;/em&gt; want to alert when a node is down in the cluster at all. The right balance is when you actually react to almost all the alerts. If you are getting alerts that you don&amp;rsquo;t do anything about, they are informational and are more appropriate for dashboards.&lt;/p&gt;
+
+&lt;h1 id=&#34;mistake-2-relying-on-alerting-or-dashboards-at-the-exclusion-of-the-other:e8c548cef83497a5beb46d7f55e2761d&#34;&gt;Mistake 2: Relying on Alerting or Dashboards at the Exclusion of the Other&lt;/h1&gt;
+
+&lt;p&gt;The downfall when depending on dashboards to show you abnormal status is that it requires that someone is looking at, and interpreting the dashboard correctly. If you have the human resources for this it can make sense in certain situations, but as a rule of thumb if you notice something that needed human action on a dashboard and didn&amp;rsquo;t get an alert for it than an alert needs to be created.&lt;/p&gt;
+
+&lt;p&gt;Dashboards are vital to monitoring and one shouldn&amp;rsquo;t depend on solely on alerts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Visualizations provide a lot of condensed information about systems rapidly&lt;/li&gt;
+&lt;li&gt;Dashboards help build operator&amp;rsquo;s mental models of systems. By watching normal behavior and internalizing, operators understand the system better and are more prepared for unexpected emergency situations.&lt;/li&gt;
+&lt;li&gt;It is faster to create dashboards that show a lot of information then it is create and tune alerts that are low in noise.&lt;/li&gt;
+&lt;li&gt;Humans are very good at picking up anomalies visually, doing this with alerting code is more difficult. Dashboards can help you discover alerts that are missing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Status dashboards and alerting are essential companions to each other in monitoring, but they need to be used correctly, and when they are treated as one-to-one mappings of each other in purpose you end up limiting both your dashboarding and alerting capabilities.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Stack Overflow&#39;s Bosun Architecture</title>

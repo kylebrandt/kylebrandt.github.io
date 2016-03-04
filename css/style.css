@@ -93,7 +93,7 @@ blockquote {
 /* line 79, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 img {
   display: block;
-  margin: 40px 0;
+  margin: 0 auto;
   width: auto;
   max-width: 100%; }
 
