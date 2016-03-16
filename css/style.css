@@ -4,85 +4,84 @@
 /* line 13, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .small-caps {
   font-variant: small-caps;
-  font-size: 18px;
   font-weight: bold; }
 
-/* line 19, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 18, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 html, body {
   height: 100%; }
 
-/* line 21, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 20, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 body {
   background: #FEFEFE;
   color: #424242;
   font-family: "Open Sans", arial, sans-serif;
   font-size: 16px; }
 
-/* line 28, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 27, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   text-transform: none; }
 
-/* line 33, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 32, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 h1 {
   font-size: 26px; }
 
-/* line 34, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 33, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 h2 {
   font-size: 22px; }
 
-/* line 35, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 34, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 h3 {
   font-size: 19px;
   margin-bottom: 14px; }
 
-/* line 36, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 35, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 h4 {
   font-size: 18px;
   margin-bottom: 14px; }
 
-/* line 37, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 36, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 h5 {
   font-size: 16px;
   margin-bottom: 13px; }
 
-/* line 38, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 37, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 h6 {
   font-size: 14px;
   margin-bottom: 12px; }
 
-/* line 40, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 39, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 p {
-  line-height: 1.3;
+  line-height: 1.4;
   margin: 0 0 10px; }
 
-/* line 45, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 44, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 a {
   color: #4682B4;
   text-decoration: none; }
 
-/* line 50, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 49, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 ul, ol {
   list-style-position: inside;
   line-height: 1.5;
   margin: 10px 10px 20px;
   padding: 0; }
-  /* line 56, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 55, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   ul ul, ul ol, ol ul, ol ol {
     margin: 0px 0 0 30px; }
-  /* line 58, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 57, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   ul li, ol li {
     margin: 0 0 2px; }
-    /* line 61, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 60, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     ul li:last-of-type, ol li:last-of-type {
       margin-bottom: 0; }
 
-/* line 65, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 64, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 blockquote {
   border-left: 1px dotted #000000;
   margin: 40px 0;
   padding: 5px 30px; }
-  /* line 70, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 69, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   blockquote p {
     color: #AEADAD;
     display: block;
@@ -90,14 +89,21 @@ blockquote {
     margin: 0;
     width: 100%; }
 
-/* line 79, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 78, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 img {
   display: block;
   margin: 0 auto;
   width: auto;
   max-width: 100%; }
 
-/* line 86, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 85, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+div.center {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%; }
+
+/* line 92, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 pre {
   background: #F1F0EA;
   border: 1px solid #DDDBCC;
@@ -106,55 +112,55 @@ pre {
   padding: 10px;
   font-size: 16px; }
 
-/* line 95, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 101, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 hr {
   border: none;
   border-bottom: 1px dotted #303030;
   margin: 45px 0; }
 
-/* line 101, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 107, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 table {
   margin-bottom: 40px;
   width: 100%;
   font-size: 14px; }
-  /* line 106, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 112, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   table tbody > tr > td,
   table tbody > tr > th {
     background-color: #f7f7f3; }
-  /* line 111, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 117, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   table th {
     padding: 0 10px 10px;
     text-align: left; }
-  /* line 116, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 122, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   table td {
     padding: 4px 4px 4px 4px; }
-  /* line 120, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 126, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   table tr {
     border-bottom: 1px dotted #AEADAD; }
 
-/* line 123, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 129, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 ::selection {
   background: #FFF5B8;
   color: #000;
   display: block; }
 
-/* line 129, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 135, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 ::-moz-selection {
   background: #FFF5B8;
   color: #000;
   display: block; }
 
-/* line 135, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 141, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .fluid-width-video-wrapper {
   margin-bottom: 40px; }
 
-/* line 137, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 143, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .hidden {
   text-indent: -9999px;
   visibility: hidden;
   display: none; }
 
-/* line 144, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 150, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .clearfix:after {
   content: "";
   display: table;
@@ -163,27 +169,27 @@ table {
 /* ============================================================ */
 /* General Appearance */
 /* ============================================================ */
-/* line 155, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 161, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .container {
   margin: 0 auto;
   position: relative;
   width: 100%;
   max-width: 889px; }
 
-/* line 162, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 168, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 #wrapper {
   height: auto;
   min-height: 100%;
   /* This must be the same as the height of the footer */
   margin-bottom: -20px; }
-  /* line 168, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 174, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   #wrapper:after {
     content: "";
     display: block;
     /* This must be the same as the height of the footer */
     height: 20px; }
 
-/* line 176, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 182, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .button {
   background: #000000;
   border: none;
@@ -193,11 +199,11 @@ table {
   font-weight: 700;
   padding: 10px 12px;
   text-transform: uppercase; }
-  /* line 186, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 192, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .button:hover {
     background: #4682B4; }
 
-/* line 189, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 195, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .button-square {
   background: #4682B4;
   color: #FFF;
@@ -206,80 +212,80 @@ table {
   margin: 0 0 0 15px;
   padding: 3px 8px 4px; }
 
-/* line 200, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 206, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .error {
   text-align: center; }
 
-/* line 204, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 210, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .comments {
   margin-top: 10px; }
 
 /* ============================================================ */
 /* Site Header */
 /* ============================================================ */
-/* line 212, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 218, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .site-header {
   padding: 20px 0 0;
   overflow: auto;
   text-align: center;
   text-transform: uppercase; }
 
-/* line 219, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 225, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .site-title-wrapper {
   display: table;
   margin: 0 auto; }
 
-/* line 224, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 230, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .site-title {
   float: left;
   font-size: 14px;
   font-weight: 600;
   margin: 0;
   text-transform: uppercase; }
-  /* line 231, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 237, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .site-title a {
     float: left;
     background: #4682B4;
     color: #FEFEFE;
     padding: 5px 10px 6px; }
-    /* line 237, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 243, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     .site-title a:hover {
       background: #000000; }
 
-/* line 240, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 246, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .site-logo {
   display: block; }
-  /* line 243, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 249, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .site-logo img {
     margin: 0; }
 
-/* line 246, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 252, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .site-nav {
   list-style: none;
   margin: 8px 0 10px; }
 
-/* line 251, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 257, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .site-nav-item {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
   margin: 0 10px; }
-  /* line 257, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 263, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .site-nav-item a:hover {
     color: #424242; }
 
 /* ============================================================ */
 /* Post */
 /* ============================================================ */
-/* line 264, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 270, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 #latest-post {
   display: none; }
 
-/* line 266, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 272, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-container {
   margin: 0 40px; }
 
-/* line 268, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 274, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-header {
   border-bottom: 0px solid #000000;
   margin: 0 0 20px;
@@ -287,7 +293,7 @@ table {
   text-align: center;
   text-transform: uppercase; }
 
-/* line 276, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 282, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-title,
 .page-title {
   font-size: 44px;
@@ -296,11 +302,11 @@ table {
   text-align: center;
   text-transform: uppercase; }
 
-/* line 285, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 291, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .page-title {
   margin: 15px 40px; }
 
-/* line 287, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 293, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-date,
 .blog-description {
   color: #AEADAD;
@@ -308,15 +314,15 @@ table {
   font-weight: 600;
   line-height: 1;
   margin: 25px 0 0; }
-  /* line 295, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 301, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-date a,
   .blog-description a {
     color: #AEADAD; }
-  /* line 296, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 302, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-date a:hover,
   .blog-description a:hover {
     color: #4682B4; }
-  /* line 298, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 304, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-date:after,
   .blog-description:after {
     border-bottom: 1px dotted #000000;
@@ -325,41 +331,41 @@ table {
     margin: 40px auto 0;
     width: 100px; }
 
-/* line 308, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 314, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-content a:hover {
   border-bottom: 1px dotted #4682B4;
   padding: 0 0 2px; }
 
-/* line 313, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 319, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-content:last-child {
   margin-bottom: 0; }
 
-/* line 316, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 322, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-footer {
   margin-top: 5px; }
 
-/* line 318, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 324, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-tags,
 .share {
   color: #AEADAD;
   font-size: 14px; }
-  /* line 323, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 329, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-tags span,
   .share span {
     font-weight: 600; }
 
-/* line 326, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 332, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-tags {
   float: left;
   margin: 3px 0 0; }
-  /* line 329, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 335, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-tags a:hover {
     color: #000000; }
 
-/* line 332, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 338, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .share {
   float: right; }
-  /* line 335, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 341, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .share a {
     background: #4682B4;
     color: #FFF;
@@ -369,16 +375,16 @@ table {
     padding: 5px 0 4px;
     width: 30px;
     text-align: center; }
-  /* line 346, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 352, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .share a:hover {
     background: #000000; }
 
-/* line 349, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 355, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-navigation {
   display: table;
   margin: 70px auto 100px; }
 
-/* line 354, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 360, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .newer-posts,
 .older-posts {
   float: left;
@@ -389,31 +395,31 @@ table {
   margin: 0 5px;
   padding: 5px 10px 6px;
   text-transform: uppercase; }
-  /* line 365, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 371, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .newer-posts:hover,
   .older-posts:hover {
     background: #000000; }
 
-/* line 370, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 376, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .page-number {
   display: none; }
 
 /* ============================================================ */
 /* Post Index */
 /* ============================================================ */
-/* line 376, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 382, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-list {
   list-style: none; }
 
-/* line 380, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 386, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-stub {
   border-bottom: 1px dotted #000000;
   margin: 0;
   position: relative; }
-  /* line 385, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 391, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-stub:first-child {
     padding-top: 0; }
-  /* line 387, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 393, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-stub a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -421,16 +427,16 @@ table {
     display: block;
     color: #424242;
     padding: 20px 5px; }
-    /* line 395, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 401, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     .post-stub a:hover {
       background: #D5ECFF;
       color: #4682B4;
       padding: 20px 12px; }
-      /* line 400, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+      /* line 406, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
       .post-stub a:hover .post-stub-tag {
         background: #4682B4; }
 
-/* line 405, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 411, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-stub-tag {
   background: #000000;
   border-radius: 3px;
@@ -441,26 +447,26 @@ table {
   padding: 0 5px;
   text-transform: uppercase; }
 
-/* line 416, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 422, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-stub-title {
   display: inline-block;
   margin: 0;
   text-transform: none; }
 
-/* line 422, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 428, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-stub-description {
   display: inline-block;
   margin: 0;
   text-transform: none; }
 
-/* line 428, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 434, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .post-stub-date {
   display: inline-block; }
-  /* line 431, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 437, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-stub-date:before {
     content: "/ "; }
 
-/* line 434, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 440, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .next-posts-link a,
 .previous-posts-link a {
   display: block;
@@ -469,10 +475,10 @@ table {
 /* ============================================================ */
 /* Author */
 /* ============================================================ */
-/* line 444, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 450, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .author-profile {
   margin: 0 40px; }
-  /* line 447, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 453, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-profile:after {
     border-bottom: 1px dotted #000000;
     content: "";
@@ -480,13 +486,13 @@ table {
     margin: 40px auto 0;
     width: 100px; }
 
-/* line 456, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 462, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .author-heading {
   margin: 15px auto;
   text-align: center;
   width: 100%; }
 
-/* line 462, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 468, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .author-avatar {
   border-radius: 50px;
   display: inline;
@@ -495,7 +501,7 @@ table {
   width: 50px;
   vertical-align: middle; }
 
-/* line 471, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 477, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .author-name {
   display: inline;
   font-size: 52px;
@@ -504,7 +510,7 @@ table {
   text-transform: uppercase;
   vertical-align: middle; }
 
-/* line 480, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 486, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .author-meta {
   color: #AEADAD;
   font-size: 14px;
@@ -513,21 +519,21 @@ table {
   margin: 25px 0 0;
   text-align: center;
   text-transform: uppercase; }
-  /* line 489, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 495, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-meta span {
     display: inline-block;
     margin: 0 10px 8px; }
-  /* line 494, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 500, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-meta i {
     margin-right: 8px; }
-  /* line 496, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 502, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-meta a {
     color: #AEADAD; }
-  /* line 497, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 503, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-meta a:hover {
     color: #4682B4; }
 
-/* line 500, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 506, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .author-bio {
   margin: 20px auto 0;
   text-align: center;
@@ -536,53 +542,53 @@ table {
 /* ============================================================ */
 /* Footer */
 /* ============================================================ */
-/* line 510, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 516, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .footer {
   background: #FEFEFE;
   color: #D3D3D3;
   height: 40px;
   margin-top: 15px;
   overflow: auto; }
-  /* line 517, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 523, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer .site-title-wrapper {
     margin: 30px auto 35px; }
-  /* line 519, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 525, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer .site-title a:hover,
   .footer .button-square:hover {
     background: #121212; }
-  /* line 524, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 530, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer .button-jump-top {
     font-size: 23px;
     line-height: 1.1;
     padding-top: 1px; }
 
-/* line 531, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 537, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 .footer-copyright {
   color: #656565;
   font-size: 11px;
   margin: 0;
   text-align: center;
   text-transform: uppercase; }
-  /* line 538, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 544, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer-copyright a {
     color: #656565;
     font-weight: 700; }
-    /* line 542, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 548, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     .footer-copyright a:hover {
       color: #FEFEFE; }
 
 /* ============================================================ */
 /* NProgress */
 /* ============================================================ */
-/* line 550, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 556, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 #nprogress .bar {
   background: #4682B4; }
 
-/* line 552, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 558, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 #nprogress .peg {
   box-shadow: 0 0 10px #4682B4, 0 0 5px #4682B4; }
 
-/* line 554, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+/* line 560, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
 #nprogress .spinner-icon {
   border-top-color: #4682B4;
   border-left-color: #4682B4; }
@@ -591,152 +597,152 @@ table {
 /* Media Queries */
 /* ============================================================ */
 @media only screen and (max-width: 800px) {
-  /* line 564, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 570, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-stub-tag {
     display: none; } }
 
 @media only screen and (max-width: 600px) {
-  /* line 568, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 574, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   h1, h2 {
     margin-bottom: 20px; }
-  /* line 570, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 576, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   p {
     margin-bottom: 20px; }
-  /* line 572, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 578, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   ul, ol {
     margin-bottom: 20px; }
-  /* line 574, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 580, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   img {
     margin: 30px 0; }
-  /* line 576, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 582, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   blockquote {
     margin: 30px 0; }
-  /* line 578, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 584, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   pre {
     margin: 20px 0; }
-  /* line 580, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 586, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   hr {
     margin: 35px 0; }
-  /* line 582, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 588, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .site-header {
     padding-top: 40px; }
-  /* line 586, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 592, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .site-title {
     float: none;
     margin-bottom: 15px; }
-    /* line 590, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 596, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     .site-title a {
       float: none; }
-  /* line 595, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 601, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .site-nav-item {
     display: block;
     margin: 15px 0; }
-  /* line 600, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 606, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-header {
     margin-bottom: 20px;
     padding-bottom: 20px; }
-  /* line 605, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 611, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-title,
   .page-title,
   .author-name,
   .author-heading {
     font-size: 42px;
     margin-top: 5px; }
-  /* line 613, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 619, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-date,
   .blog-description,
   .author-meta {
     margin-top: 20px; }
-    /* line 618, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 624, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     .post-date:after, .post-date:before,
     .blog-description:after,
     .blog-description:before,
     .author-meta:after,
     .author-meta:before {
       margin-top: 30px; }
-  /* line 624, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 630, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-profile:after, .author-profile:before {
     margin-top: 20px; }
-  /* line 629, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 635, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-stub-title {
     display: block; }
-  /* line 631, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 637, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-stub-date:before {
     content: "";
     display: block; }
-  /* line 636, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 642, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-list {
     margin-top: 20px; }
-  /* line 640, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 646, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-container,
   .post-list,
   .author-profile {
     margin-right: 25px;
     margin-left: 25px; }
-  /* line 647, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 653, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-tags {
     width: 100%; }
-  /* line 649, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 655, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-stub a,
   .post-stub a:hover {
     padding-top: 12px;
     padding-bottom: 12px; }
-  /* line 655, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 661, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .share {
     float: left;
     margin-top: 20px; }
-    /* line 659, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 665, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     .share a {
       margin: 0 5px 0 0; }
-  /* line 664, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 670, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer {
     margin-top: 50px; } }
 
 @media only screen and (max-width: 400px) {
-  /* line 670, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 676, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .site-header {
     padding-top: 40px; }
-  /* line 674, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 680, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-title,
   .page-title,
   .author-name,
   .author-heading {
     font-size: 30px;
     line-height: 1.2; }
-  /* line 682, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
-  .post-date,
-  .blog-description,
-  .author-meta {
-    line-height: 1.6; }
   /* line 688, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-date,
   .blog-description,
   .author-meta {
+    line-height: 1.6; }
+  /* line 694, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  .post-date,
+  .blog-description,
+  .author-meta {
     margin-top: 10px; }
-    /* line 693, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+    /* line 699, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
     .post-date:after, .post-date:before,
     .blog-description:after,
     .blog-description:before,
     .author-meta:after,
     .author-meta:before {
       margin-top: 20px; }
-  /* line 699, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 705, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-profile:after, .author-profile:before {
     margin-top: 10px; }
-  /* line 704, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 710, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .post-container,
   .post-list,
   .author-profile {
     margin-right: 15px;
     margin-left: 15px; }
-  /* line 711, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 717, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-avatar {
     display: block;
     margin: 0 auto 18px; }
-  /* line 716, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 722, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .author-meta span {
     display: block;
     margin: 18px 0; }
-  /* line 721, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
+  /* line 727, /Users/kbrandt/src/github.com/kylebrandt/blog/themes/ghostwriter/static/sass/style.scss */
   .footer-copyright {
     padding: 0 10px; } }

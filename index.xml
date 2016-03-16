@@ -6,8 +6,55 @@
     <description>Recent content on Kyle Brandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2015, Kyle Brandt; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 04 Mar 2016 08:36:42 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 16 Mar 2016 16:29:41 -0400</lastBuildDate>
     <atom:link href="http://kbrandt.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The False Dichotomies of Huge Dickensians</title>
+      <link>http://kbrandt.com/post/dickensian/</link>
+      <pubDate>Wed, 16 Mar 2016 16:29:41 -0400</pubDate>
+      
+      <guid>http://kbrandt.com/post/dickensian/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m not talking about the author. Young, and some not so young engineers sometimes have some positive associations with being disrespectful, dismissive, or otherwise a &lt;strong&gt;Huge Dickensian&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;embed video-player center&#34; style=&#34;width: 600px&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34;
+    src=&#34;http://www.youtube.com/embed/79zvkvajQEk?start=70&#34;
+    allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is shame, because it hurts their careers and makes people around them unhappy. So I&amp;rsquo;d like to dispel a couple ideas I&amp;rsquo;ve held or seen other people hold, that are just not true.&lt;/p&gt;
+
+&lt;h1 class=&#34;small-caps&#34;&gt; People will think I&#39;m Smarter if I&#39;m a Jackass to Others&lt;/h1&gt;
+
+&lt;p&gt;In both fiction and reality there are geniuses that have a reputation for being rude to others. To name a few:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sheldon Cooper (TV: Big Bang Theory)&lt;/li&gt;
+&lt;li&gt;Dr House (TV)&lt;/li&gt;
+&lt;li&gt;Linux Torvalds (At least a times)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They are role models that create stereotypes, and ones that many of us who were into computers growing up can relate to. So based on that stereotype it seems to follow that &amp;ldquo;I&amp;rsquo;m smart, and maybe if I act like these people, people will think I&amp;rsquo;m a genius&amp;rdquo;. It does not. Likely the only people you will fool are the ones that don&amp;rsquo;t matter. Instead, people will think you are just insecure and only want to work with you if they have to.&lt;/p&gt;
+
+&lt;h1 class=&#34;small-caps&#34;&gt;I&#39;d rather hire someone smart that is a jerk than someone nice but useless&lt;/h1&gt;
+
+&lt;p&gt;This idea follows from the above stereotype. If you ask people this question you will get different answers and hear some good stories. If faced with that dilemma I would probably have to say &amp;ldquo;It depends.&amp;rdquo; But generally it is a false dilemma. The best places to work are picky, and will hire people who are not intolerable and are also smart. In other words, they can get people with good traditional intelligence and emotional intelligence.&lt;/p&gt;
+
+&lt;p&gt;There are of course exceptions, but generally these are extreme and if you think you are one of those exceptions, you are probably wrong.&lt;/p&gt;
+
+&lt;p&gt;&lt;h1 class=&#34;small-caps&#34;&gt;I want to be direct with people, and that often means I have to be mean&lt;/h1&gt;
+This one is understandable, as telling hard truths to people without being mean is difficult. However, people are often aware of you motivation when doing this. Generally one wants to change some behavior that is making their lives difficult. But in addition to that there can be a desire to help that person and see them grow, or put them down to make yourself feel better. If it is the latter they will know.&lt;/p&gt;
+
+&lt;p&gt;You don&amp;rsquo;t have to be bubbly and outgoing. People like Spock, but that is because they know he isn&amp;rsquo;t mean. He doesn&amp;rsquo;t take pleasure in seeing other people fail and is analytical. Another way to think about this is the difference between being &lt;a href=&#34;http://www.artofmanliness.com/2013/02/12/how-to-be-assertive/&#34;&gt;assertive vs aggressive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;h1 class=&#34;small-caps&#34;&gt;If you are smart I wouldn&amp;rsquo;t have to explain myself&lt;/h1&gt;
+I think the opposite is true. Smart people will think of multiple possible scenarios based on vague communication. People also won&amp;rsquo;t think you are too smart to explain yourself, they will just think you are not articulate or haven&amp;rsquo;t actually thought out your ideas and are just relying on heuristics.&lt;/p&gt;
+
+&lt;p&gt;All of this doesn&amp;rsquo;t apply to people that actually have disorders related to social interaction, but rather reflect some naive thoughts that I bet most of us held at one point. If these thoughts ring true, there are some simple cheap books that can get you on the right path such as &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People&#34;&gt;How to Win Friends and Influence People&lt;/a&gt;&amp;rdquo; and &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/Nonviolent_Communication&#34;&gt;Nonviolent Communication&lt;/a&gt;&amp;rdquo;. You&amp;rsquo;re smart, right? So it won&amp;rsquo;t take much time to learn to be nice and it will help your career.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Conflating The Roles of Alerting and Dashboards</title>
